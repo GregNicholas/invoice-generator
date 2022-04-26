@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Invoice Creator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <section class="whole-card">
+            <header class="header">
+                <h1>Invoice Generator</h1>
+                <p>Thank you for choosing GoodCorp LLC!</p>
+            </header>
+            <section class="main-section">
+                <div class="services" id="services">
+                </div>
+                <div class="selected-services">
+                    <ul class="selected-list" id="selected-list" aria-label="Service:">
+                    </ul>
+                    <div class="selected-services-subheading">
+                        <div id="notes-title">Notes</div>
+                        <div>Total Amount</div>
+                    </div>
+                    <div class="selected-services-info">
+                        <div id="notes">We accept cash, credit card, or paypal.</div>
+                        <div id="total-price">$<span id="price">0</span></div>
+                    </div>
+                </div>
+                <button id="submit-invoice">Send Invoice</button>
+            </section>
+        </section>
+        <button id="theme-switch">toggle theme</button>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

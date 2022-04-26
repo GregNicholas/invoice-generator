@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --background-color: #fff;
+    --header-background-color: #F5F5F5;
+    --btn-background-color: #F5F5F5;
+    --text-color: #2B283A;
+}
+
+[data-theme="dark"] {
+    --background-color: #1F2937;
+    --header-background-color: #3A69D2;
+    --btn-background-color: #D1D4F4;
+    --text-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: var(--text-color);
+}
+
+.header {
+    text-align: center;
+    height: 190;
+    background-color: var(--header-background-color);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.whole-card {
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 550px;
+}
+
+.main-section {
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.service-btn {
+    width: 8.9rem;
+    height: 2rem;
+    border-radius: 7px;
+    padding: 9px 13px;
+    font-size: .875rem;
+    line-height: 1rem;
+    color: #2B283A;
+    background-color: var(--btn-background-color);
+    border: 1px solid #D5D4D8;  
+    cursor: pointer;
+}
+
+.service-btn:hover {
+    background-color: #98a0ff;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.selected-services {
+    margin: 2rem 0;
+}
+
+.selected-list {
+    margin: 0 0 1.5rem 0;
+    padding: 0 0 1.5rem 0;
+    border-bottom: 1px solid #C3C6DB;
+    list-style-type: none;
+}
+
+.selected-service {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove {
+    font-size: .8rem;
+    color:red;
+    cursor: pointer;
+}
+
+.dollar {
+    color: #918E9B;
+    font-weight: 400;
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+ul:before{
+    content:attr(aria-label);
+    font-weight:600;
+    font-size: .75rem;
+    line-height: 1.25rem;
+    color: #918E9B;
+    text-transform: uppercase;
+}
+
+.selected-services-subheading {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 1.25rem;
+    color: #918E9B;
+    text-transform: uppercase;
+}
+
+.selected-services-info {
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: .9375rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#total-price {
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 32px;
+}
+
+#submit-invoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+    width: 100%;
+    height: 44px;
+    background: #3770ED;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    cursor: pointer;
+}
